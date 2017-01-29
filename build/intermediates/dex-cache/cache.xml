@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b9867699598f3b70b12e94d78f7057635aaf6b62">
+        sha1="2c83f5a1c1d90815d232bf8f4b2f888328ed6f1e">
         <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_828f43ea106cfb359d2dc3205d9cafd0761248ad/classes.dex" />
     </item>
     <item
@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9750e66bd5b0945e3b03ee07bb50b60e222f84a1">
+        sha1="5ca17798b473caa91a038b0942d3e0a912336935">
         <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35ef276f5db79df6474dac7906134f36b9df98f5/classes.dex" />
     </item>
     <item
