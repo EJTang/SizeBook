@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_password_eye.xml"
     },
     {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
@@ -72,6 +80,10 @@
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_cab_background_top_material.xml"
     },
@@ -92,12 +104,20 @@
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/navigation_empty_icon.xml"
+    },
+    {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",

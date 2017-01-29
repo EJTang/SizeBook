@@ -1,0 +1,7 @@
+#Sat Jan 28 23:12:26 MST 2017
+base.0=/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35ef276f5db79df6474dac7906134f36b9df98f5
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_828f43ea106cfb359d2dc3205d9cafd0761248ad/classes.dex
+base.1=/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_828f43ea106cfb359d2dc3205d9cafd0761248ad
+file.0=/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35ef276f5db79df6474dac7906134f36b9df98f5/classes.dex
