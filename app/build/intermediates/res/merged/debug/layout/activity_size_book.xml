@@ -12,7 +12,7 @@
     tools:context="ejtang.sizebook.SizeBookActivity">
 
     <ListView
-        android:id="@+id/people"
+        android:id="@+id/peopleList"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

@@ -8,6 +8,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class SizeBookActivity extends AppCompatActivity {
@@ -15,16 +23,47 @@ public class SizeBookActivity extends AppCompatActivity {
     private ArrayList<person> people;
     private ArrayAdapter<person> adapter;
 
+    private static final String FILENAME = "SizeBook.sav";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_size_book);
+        loadFile();
+        peopleList = (ListView) findViewById(R.id.peopleList);
 
-        peopleList = (ListView) findViewById(R.id.people);
+    }
+
+    protected void onStart() {
+        super.onStart();
+        loadFile();
+        adapter = new ArrayAdapter<person>(this,
+                R.layout.list_item, people);
+        peopleList.setAdapter(adapter);
+
+    }
+
+    protected void loadFile(){
+        try {
+            FileInputStream fis = openFileInput(FILENAME);
+            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
+            Gson gson = new Gson();
+
+            // Taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt
+            // 2017-01-24 18:19
+            Type listType = new TypeToken<ArrayList<person>>(){}.getType();
+            people = gson.fromJson(in, listType);
+
+
+        } catch (FileNotFoundException e) {
+            people = new ArrayList<person>();
+        }
+
     }
 
     public void addPerson (View view) {
         Intent intent = new Intent(this, addPerson.class);
         startActivity(intent);
+        adapter.notifyDataSetChanged();
     }
 }
