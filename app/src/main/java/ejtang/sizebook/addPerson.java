@@ -22,11 +22,11 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-public class addPerson extends AppCompatActivity {
+public class AddPerson extends AppCompatActivity {
     EditText name, date, neck, bust, chest, waist, hip, inseam, comments;
     private static final String FILENAME = "SizeBook.sav";
-    private ArrayList<person> people;
-    private person person;
+    private ArrayList<Person> people;
+    private Person person;
 
 
     @Override
@@ -37,7 +37,7 @@ public class addPerson extends AppCompatActivity {
     }
 
     public void finish (View view) {
-        Intent intent = new Intent(this, SizeBookActivity.class);
+        //Intent intent = new Intent(this, SizeBookActivity.class);
 
         name = (EditText) findViewById(R.id.nameText);
         date = (EditText) findViewById(R.id.dateText);
@@ -49,7 +49,7 @@ public class addPerson extends AppCompatActivity {
         inseam = (EditText) findViewById(R.id.inseamText);
         comments = (EditText) findViewById(R.id.commentsText);
 
-        person = new person("bobby");
+        person = new Person("bobby");
         /*person.setNeck(Float.valueOf(neck.getText().toString()));
         person.setBust(Float.valueOf(bust.getText().toString()));
         person.setChest(Float.valueOf(chest.getText().toString()));
@@ -71,13 +71,13 @@ public class addPerson extends AppCompatActivity {
 
             // Taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt
             // 2017-01-24 18:19
-            Type listType = new TypeToken<ArrayList<person>>() {
+            Type listType = new TypeToken<ArrayList<Person>>() {
             }.getType();
             people = gson.fromJson(in, listType);
 
 
         } catch (FileNotFoundException e) {
-            people = new ArrayList<person>();
+            people = new ArrayList<Person>();
         }
     }
 

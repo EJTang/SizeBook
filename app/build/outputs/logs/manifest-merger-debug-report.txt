@@ -50,7 +50,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:15:27-74
-activity#ejtang.sizebook.addPerson
+activity#ejtang.sizebook.AddPerson
 ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:18:9-56
 	android:name
 		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:18:19-44

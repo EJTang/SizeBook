@@ -24,6 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="addPerson"
+        android:onClick="AddPerson"
         app:srcCompat="@android:drawable/ic_input_add" />
 </RelativeLayout>

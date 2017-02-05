@@ -20,8 +20,8 @@ import java.util.ArrayList;
 
 public class SizeBookActivity extends AppCompatActivity {
     private ListView peopleList;
-    private ArrayList<person> people;
-    private ArrayAdapter<person> adapter;
+    private ArrayList<Person> people;
+    private ArrayAdapter<Person> adapter;
 
     private static final String FILENAME = "SizeBook.sav";
 
@@ -37,8 +37,7 @@ public class SizeBookActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         loadFile();
-        adapter = new ArrayAdapter<person>(this,
-                R.layout.list_item, people);
+        adapter = new PeopleAdapter(people,this);
         peopleList.setAdapter(adapter);
 
     }
@@ -51,18 +50,18 @@ public class SizeBookActivity extends AppCompatActivity {
 
             // Taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt
             // 2017-01-24 18:19
-            Type listType = new TypeToken<ArrayList<person>>(){}.getType();
+            Type listType = new TypeToken<ArrayList<Person>>(){}.getType();
             people = gson.fromJson(in, listType);
 
 
         } catch (FileNotFoundException e) {
-            people = new ArrayList<person>();
+            people = new ArrayList<Person>();
         }
 
     }
 
-    public void addPerson (View view) {
-        Intent intent = new Intent(this, addPerson.class);
+    public void AddPerson (View view) {
+        Intent intent = new Intent(this, AddPerson.class);
         startActivity(intent);
         adapter.notifyDataSetChanged();
     }

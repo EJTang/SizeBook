@@ -12,39 +12,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_5bb9eefa7bc1b79d30b66b4a5956947e5371a8d2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_f13270eee5c93642b4f0d09838bf50f68d30adf5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2e8547a6ceb5e2fbcf6529d22037567f0e3594da">
-        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_828f43ea106cfb359d2dc3205d9cafd0761248ad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_e217ce554f78fd9a009f3752839ab5a269440643/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_5bb9eefa7bc1b79d30b66b4a5956947e5371a8d2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,11 +66,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_f13270eee5c93642b4f0d09838bf50f68d30adf5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3fb29b71a84256e402afc21a2c142dbe0a9b2fab">
+        sha1="d43d2e66bd14ec09d6605f1fcfa37b740e9b75ad">
         <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35ef276f5db79df6474dac7906134f36b9df98f5/classes.dex" />
     </item>
     <item
@@ -117,6 +108,15 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_87de4ca662657bfb2c38a311e6d5e932726baf03/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fde31f402a6344a4ae0fc3ef58bb8844b47c1f72">
+        <dex dex="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_828f43ea106cfb359d2dc3205d9cafd0761248ad/classes.dex" />
     </item>
     <item
         is-multidex="true"
