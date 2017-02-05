@@ -22,7 +22,6 @@ public class SizeBookActivity extends AppCompatActivity {
     private ListView peopleList;
     private ArrayList<Person> people;
     private ArrayAdapter<Person> adapter;
-    int editPosition;
 
     private static final String FILENAME = "SizeBook.sav";
 
@@ -43,7 +42,7 @@ public class SizeBookActivity extends AppCompatActivity {
         peopleList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> peopleAdapterView, View personView,
                                     int position, long id) {
-                editPosition = position;
+                ExpandPerson(position);
             }
         });
     }
@@ -72,7 +71,7 @@ public class SizeBookActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 
-    public void ExpandPerson (View view) {
+    public void ExpandPerson (int editPosition) {
         Intent intent = new Intent(this, ExpandPerson.class);
         intent.putExtra("position", editPosition);
         startActivity(intent);

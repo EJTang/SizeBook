@@ -28,23 +28,47 @@ public class ExpandPerson extends AppCompatActivity {
     private Person person;
     int position;
     TextView nameField;
+    TextView dateField;
+    TextView neckField;
+    TextView bustField;
+    TextView chestField;
+    TextView waistField;
+    TextView hipField;
+    TextView inseamField;
+    TextView commentsField;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expand_person);
         Intent intent = getIntent();
-        position = intent.getIntExtra("position", 0);
+        position = intent.getIntExtra("position",-1);
         nameField = (TextView) findViewById(R.id.nameText);
+        dateField = (TextView) findViewById(R.id.dateText);
+        neckField = (TextView) findViewById(R.id.neckText);
+        bustField = (TextView) findViewById(R.id.bustText);
+        chestField = (TextView) findViewById(R.id.chestText);
+        waistField = (TextView) findViewById(R.id.waistText);
+        hipField = (TextView) findViewById(R.id.hipText);
+        inseamField = (TextView) findViewById(R.id.inseamText);
+        commentsField = (TextView) findViewById(R.id.commentsText);
+
 
         Button deleteButton = (Button) findViewById(R.id.delete);
         Button editButton = (Button) findViewById(R.id.edit);
 
         deleteButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                setResult(RESULT_OK);
                 people.remove(position);
                 saveInFile();
                 finish();
+            }
+        });
+
+        editButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setResult(RESULT_OK);
             }
         });
     }
@@ -55,6 +79,15 @@ public class ExpandPerson extends AppCompatActivity {
         loadFile();
         person = people.get(position);
         nameField.setText(person.getName());
+        dateField.setText(person.getDate().toString());
+        neckField.setText(person.getNeck().toString());
+        bustField.setText(person.getBust().toString());
+        chestField.setText(person.getChest().toString());
+        waistField.setText(person.getWaist().toString());
+        hipField.setText(person.getHip().toString());
+        inseamField.setText(person.getInseam().toString());
+        commentsField.setText(person.getComment().toString());
+
 
     }
 
