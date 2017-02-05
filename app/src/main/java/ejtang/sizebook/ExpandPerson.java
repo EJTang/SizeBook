@@ -69,6 +69,8 @@ public class ExpandPerson extends AppCompatActivity {
         editButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setResult(RESULT_OK);
+                editPerson();
+
             }
         });
     }
@@ -88,7 +90,12 @@ public class ExpandPerson extends AppCompatActivity {
         inseamField.setText(person.getInseam().toString());
         commentsField.setText(person.getComment().toString());
 
+    }
 
+    protected void editPerson() {
+        Intent intent = new Intent(this, EditPerson.class);
+        intent.putExtra("position", position);
+        startActivity(intent);
     }
 
     protected void loadFile() {

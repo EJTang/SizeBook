@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidMani
 		INJECTED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:5:5-20:19
+ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.android.support:design:25.1.0] /Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.1.0] /Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] /Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/AndroidManifest.xml:22:5-20
@@ -55,9 +55,13 @@ ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidMani
 	android:name
 		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:18:19-44
 activity#ejtang.sizebook.ExpandPerson
-ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:19:9-59
+ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:19:9-50
 	android:name
 		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:19:19-47
+activity#ejtang.sizebook.EditPerson
+ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:20:9-57
+	android:name
+		ADDED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml:20:19-45
 uses-sdk
 INJECTED from /Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] /Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/AndroidManifest.xml:21:5-23:62

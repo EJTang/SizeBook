@@ -23,6 +23,7 @@
         </activity>
         <activity android:name="ejtang.sizebook.AddPerson" />
         <activity android:name="ejtang.sizebook.ExpandPerson" />
+        <activity android:name="ejtang.sizebook.EditPerson" />
     </application>
 
 </manifest>

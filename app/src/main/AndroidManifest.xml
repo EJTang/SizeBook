@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddPerson" />
-        <activity android:name=".ExpandPerson"></activity>
+        <activity android:name=".ExpandPerson" />
+        <activity android:name=".EditPerson"></activity>
     </application>
 
 </manifest>

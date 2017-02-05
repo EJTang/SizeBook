@@ -23,7 +23,15 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class AddPerson extends AppCompatActivity {
-    EditText name, date, neck, bust, chest, waist, hip, inseam, comments;
+    EditText name;
+    EditText date;
+    EditText neck;
+    EditText bust;
+    EditText chest;
+    EditText waist;
+    EditText hip;
+    EditText inseam;
+    EditText comments;
     private static final String FILENAME = "SizeBook.sav";
     private ArrayList<Person> people;
     private Person person;

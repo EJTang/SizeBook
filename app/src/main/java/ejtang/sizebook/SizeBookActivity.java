@@ -29,7 +29,7 @@ public class SizeBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_size_book);
-        loadFile();
+        //loadFile();
         peopleList = (ListView) findViewById(R.id.peopleList);
 
     }
@@ -68,13 +68,13 @@ public class SizeBookActivity extends AppCompatActivity {
     public void AddPerson (View view) {
         Intent intent = new Intent(this, AddPerson.class);
         startActivity(intent);
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
     }
 
     public void ExpandPerson (int editPosition) {
         Intent intent = new Intent(this, ExpandPerson.class);
         intent.putExtra("position", editPosition);
         startActivity(intent);
-        adapter.notifyDataSetChanged();
+        //adapter.notifyDataSetChanged();
     }
 }

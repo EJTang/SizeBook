@@ -156,6 +156,10 @@
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action_tombstone.xml"
     },
     {
+        "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/layout/activity_edit_person.xml",
+        "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/src/main/res/layout/activity_edit_person.xml"
+    },
+    {
         "merged": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
         "source": "/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_alert_dialog_title_material.xml"
     },

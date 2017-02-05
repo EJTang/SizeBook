@@ -5,47 +5,47 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="13355974635374"
+    timestamp="17399483558695"
     token="-1239713984605336017"
-    verifier="FIELD_REMOVED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="99" />
+        duration="140" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="18" />
     <task
         name="instant-run-transform"
-        duration="29" />
+        duration="50" />
     <task
         name="verifier"
-        duration="3" />
+        duration="2" />
 
     <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
+        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="12989958055402"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="15340388025960"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="13295050666475"
+        timestamp="17168299454659"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="13355974635374"
-        verifier="FIELD_REMOVED" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="17399483558695"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
