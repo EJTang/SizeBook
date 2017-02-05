@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
@@ -22,6 +22,7 @@ public class SizeBookActivity extends AppCompatActivity {
     private ListView peopleList;
     private ArrayList<Person> people;
     private ArrayAdapter<Person> adapter;
+    int editPosition;
 
     private static final String FILENAME = "SizeBook.sav";
 
@@ -39,7 +40,12 @@ public class SizeBookActivity extends AppCompatActivity {
         loadFile();
         adapter = new PeopleAdapter(people,this);
         peopleList.setAdapter(adapter);
-
+        peopleList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            public void onItemClick(AdapterView<?> peopleAdapterView, View personView,
+                                    int position, long id) {
+                editPosition = position;
+            }
+        });
     }
 
     protected void loadFile(){
@@ -62,6 +68,13 @@ public class SizeBookActivity extends AppCompatActivity {
 
     public void AddPerson (View view) {
         Intent intent = new Intent(this, AddPerson.class);
+        startActivity(intent);
+        adapter.notifyDataSetChanged();
+    }
+
+    public void ExpandPerson (View view) {
+        Intent intent = new Intent(this, ExpandPerson.class);
+        intent.putExtra("position", editPosition);
         startActivity(intent);
         adapter.notifyDataSetChanged();
     }

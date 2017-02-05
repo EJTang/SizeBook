@@ -49,16 +49,17 @@ public class AddPerson extends AppCompatActivity {
         inseam = (EditText) findViewById(R.id.inseamText);
         comments = (EditText) findViewById(R.id.commentsText);
 
-        person = new Person("bobby");
-        /*person.setNeck(Float.valueOf(neck.getText().toString()));
-        person.setBust(Float.valueOf(bust.getText().toString()));
-        person.setChest(Float.valueOf(chest.getText().toString()));
-        person.setWaist(Float.valueOf(waist.getText().toString()));
-        person.setHip(Float.valueOf(hip.getText().toString()));
-        person.setInseam(Float.valueOf(inseam.getText().toString()));
-        person.setComment(comments.getText().toString());*/
+        person = new Person(name.getText().toString());
+        person.setNeck(Float.parseFloat(neck.getText().toString()));
+        person.setBust(Float.parseFloat(bust.getText().toString()));
+        person.setChest(Float.parseFloat(chest.getText().toString()));
+        person.setWaist(Float.parseFloat(waist.getText().toString()));
+        person.setHip(Float.parseFloat(hip.getText().toString()));
+        person.setInseam(Float.parseFloat(inseam.getText().toString()));
+        person.setComment(comments.getText().toString());
 
         people.add(person);
+        //people.clear();
         saveInFile();
         finish();
     }

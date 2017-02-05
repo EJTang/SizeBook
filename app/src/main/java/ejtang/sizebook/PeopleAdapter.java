@@ -1,6 +1,9 @@
 package ejtang.sizebook;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,10 +35,16 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
         Person person = getItem(postion);
         TextView nameText = (TextView) customView.findViewById(R.id.nameText);
         TextView dateText = (TextView) customView.findViewById(R.id.dateText);
+        SpannableString ss = new SpannableString(person.getName());
+        //ss.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 5, 0);
 
-        nameText.setText(person.getName());
+
+        nameText.setText(ss);
         dateText.setText("Last Updated:" + person.getDate());
 
         return customView;
     }
+
+
+
 }

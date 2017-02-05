@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="ejtang.sizebook.AddPerson" />
+        <activity android:name="ejtang.sizebook.ExpandPerson" />
     </application>
 
 </manifest>

@@ -25,12 +25,10 @@ public class Person {
     }
 
     public String getName() {
-
         return name;
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
@@ -39,7 +37,6 @@ public class Person {
     }
 
     public void setDate(Date date) {
-
         this.date = date;
     }
 
@@ -92,12 +89,10 @@ public class Person {
     }
 
     public String getComment() {
-
         return comment;
     }
 
     public void setComment(String comment) {
-
         this.comment = comment;
     }
 
