@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -19,6 +20,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class EditPerson extends AppCompatActivity {
@@ -26,6 +29,7 @@ public class EditPerson extends AppCompatActivity {
     private ArrayList<Person> people;
     private Person person;
     int position;
+    Boolean errorFree;
     EditText name;
     EditText date;
     EditText neck;
@@ -62,26 +66,115 @@ public class EditPerson extends AppCompatActivity {
         person = people.get(position);
 
         name.setText(person.getName());
-        neck.setText(person.getNeck().toString());
-        bust.setText(person.getBust().toString());
-        chest.setText(person.getChest().toString());
-        waist.setText(person.getWaist().toString());
-        hip.setText(person.getHip().toString());
-        inseam.setText(person.getInseam().toString());
+        neck.setText(String.format("%.1f", person.getNeck()));
+        bust.setText(String.format("%.1f",person.getBust()));
+        chest.setText(String.format("%.1f",person.getChest()));
+        waist.setText(String.format("%.1f",person.getWaist()));
+        hip.setText(String.format("%.1f",person.getHip()));
+        inseam.setText(String.format("%.1f",person.getInseam()));
         comments.setText(person.getComment());
     }
 
-    protected void finish(View view) {
-        person.setName(name.getText().toString());
-        person.setNeck(Float.parseFloat(neck.getText().toString()));
-        person.setBust(Float.parseFloat(bust.getText().toString()));
-        person.setChest(Float.parseFloat(chest.getText().toString()));
-        person.setWaist(Float.parseFloat(waist.getText().toString()));
-        person.setHip(Float.parseFloat(hip.getText().toString()));
-        person.setInseam(Float.parseFloat(inseam.getText().toString()));
-        person.setComment(comments.getText().toString());
-        
+    public void savePerson(View view) {
+        errorFree = true;
+        name = (EditText) findViewById(R.id.nameText);
+        date = (EditText) findViewById(R.id.dateText);
+        neck = (EditText) findViewById(R.id.neckText);
+        bust = (EditText) findViewById(R.id.bustText);
+        chest = (EditText) findViewById(R.id.chestText);
+        waist = (EditText) findViewById(R.id.waistText);
+        hip = (EditText) findViewById(R.id.hipText);
+        inseam = (EditText) findViewById(R.id.inseamText);
+        comments = (EditText) findViewById(R.id.commentsText);
 
+        if (name.getText().toString().isEmpty()){
+            Toast.makeText(this, "Please Enter a Name",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            person.setName(name.getText().toString());
+        }
+        try{
+            if (neck.getText().toString().isEmpty()) {
+                person.setNeck(Float.parseFloat("0"));
+            } else {
+                person.setNeck(Float.parseFloat(neck.getText().toString()));
+            }
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for neck",
+                    Toast.LENGTH_SHORT).show();
+        }
+        try{
+            if (bust.getText().toString().isEmpty()) {
+                person.setBust(Float.parseFloat("0"));
+            } else {
+                person.setBust(Float.parseFloat(bust.getText().toString()));
+            }
+
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for bust",
+                    Toast.LENGTH_SHORT).show();
+        }
+        try{
+            if (chest.getText().toString().isEmpty()) {
+                person.setChest(Float.parseFloat("0"));
+            } else {
+                person.setChest(Float.parseFloat(chest.getText().toString()));
+            }
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for chest",
+                    Toast.LENGTH_SHORT).show();
+        }
+        try{
+            if (waist.getText().toString().isEmpty()) {
+                person.setWaist(Float.parseFloat("0"));
+            } else {
+                person.setWaist(Float.parseFloat(waist.getText().toString()));
+            }
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for waist",
+                    Toast.LENGTH_SHORT).show();
+        }
+        try{
+            if (hip.getText().toString().isEmpty()) {
+                person.setHip(Float.parseFloat("0"));
+            } else {
+                person.setHip(Float.parseFloat(hip.getText().toString()));
+            }
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for hip",
+                    Toast.LENGTH_SHORT).show();
+        }
+        try{
+            if (inseam.getText().toString().isEmpty()) {
+                person.setInseam(Float.parseFloat("0"));
+            } else {
+                person.setInseam(Float.parseFloat(inseam.getText().toString()));
+            }
+        } catch (NumberFormatException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for inseam",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        if (comments.getText().toString().isEmpty()) {
+            person.setComment("No Additional Comments");
+        } else {
+            person.setComment(comments.getText().toString());
+        }
+
+        if (errorFree) {
+            finish(view);
+        }
+
+    }
+
+    public void finish (View view) {
         saveInFile();
         finish();
     }

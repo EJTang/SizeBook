@@ -81,14 +81,13 @@ public class ExpandPerson extends AppCompatActivity {
         loadFile();
         person = people.get(position);
         nameField.setText(person.getName());
-        dateField.setText(person.getDate().toString());
-        neckField.setText(person.getNeck().toString());
-        bustField.setText(person.getBust().toString());
-        chestField.setText(person.getChest().toString());
-        waistField.setText(person.getWaist().toString());
-        hipField.setText(person.getHip().toString());
-        inseamField.setText(person.getInseam().toString());
-        commentsField.setText(person.getComment().toString());
+        neckField.setText(String.format("%.1f", person.getNeck()));
+        bustField.setText(String.format("%.1f",person.getBust()));
+        chestField.setText(String.format("%.1f",person.getChest()));
+        waistField.setText(String.format("%.1f",person.getWaist()));
+        hipField.setText(String.format("%.1f",person.getHip()));
+        inseamField.setText(String.format("%.1f",person.getInseam()));
+        commentsField.setText(person.getComment());
 
     }
 
