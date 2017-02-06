@@ -36,11 +36,8 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
         Person person = getItem(postion);
         TextView nameText = (TextView) customView.findViewById(R.id.nameText);
         TextView dateText = (TextView) customView.findViewById(R.id.dateText);
-        SpannableString ss = new SpannableString(person.getName());
-        //ss.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 5, 0);
 
-
-        nameText.setText(ss);
+        nameText.setText(person.getName());
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         sdf.setLenient(false);
         dateText.setText("Last Updated:" +sdf.format(person.getDate()));
