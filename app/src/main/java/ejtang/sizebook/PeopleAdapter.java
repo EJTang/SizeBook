@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextClock;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -40,7 +41,9 @@ public class PeopleAdapter extends ArrayAdapter<Person> {
 
 
         nameText.setText(ss);
-        dateText.setText("Last Updated:" + person.getDate());
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        sdf.setLenient(false);
+        dateText.setText("Last Updated:" +sdf.format(person.getDate()));
 
         return customView;
     }

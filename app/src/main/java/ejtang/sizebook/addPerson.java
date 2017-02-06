@@ -22,7 +22,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+import static junit.framework.Assert.assertFalse;
 
 public class AddPerson extends AppCompatActivity {
     EditText name;
@@ -66,6 +73,28 @@ public class AddPerson extends AppCompatActivity {
         } else {
             person = new Person(name.getText().toString());
         }
+
+        // Taken from https://www.mkyong.com/java/how-to-check-if-date-is-valid-in-java/
+        // on 2017-02-05
+        // Alex Czeto showed me this URL
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        sdf.setLenient(false);
+
+        try {
+            if (date.getText().toString().isEmpty()) {
+                person.setDate(new Date());
+            } else {
+                //if not valid, it will throw ParseException
+                Date newDate = sdf.parse(date.getText().toString());
+                person.setDate(newDate);
+            }
+        } catch (ParseException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for date",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+
         try{
             if (neck.getText().toString().isEmpty()) {
                 person.setNeck(Float.parseFloat("0"));

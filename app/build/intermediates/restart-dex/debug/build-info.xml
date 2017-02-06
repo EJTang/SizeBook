@@ -5,26 +5,26 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="29010366340597"
+    timestamp="33244728976882"
     token="-1239713984605336017"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="119" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="29" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="16" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         timestamp="15340388025960"
@@ -44,25 +44,18 @@
             type="DEX" />
     </build>
     <build
-        timestamp="27930692338953"
+        timestamp="33182776591520"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="28690722450963"
+        timestamp="33244728976882"
         verifier="COMPATIBLE" >
         <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/builds/debug/28690722450963/classes.dex"
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
             type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="29010366340597"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

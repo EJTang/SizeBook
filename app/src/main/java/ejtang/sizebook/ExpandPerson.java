@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class ExpandPerson extends AppCompatActivity {
@@ -86,6 +87,9 @@ public class ExpandPerson extends AppCompatActivity {
         } else {
             neckField.setText(String.format("%.1f", person.getNeck()));
         }
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        sdf.setLenient(false);
+        dateField.setText(sdf.format(person.getDate()));
         if (person.getBust() == 0) {
             bustField.setText("N/A");
         } else {

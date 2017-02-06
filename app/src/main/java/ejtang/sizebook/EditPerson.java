@@ -22,7 +22,10 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class EditPerson extends AppCompatActivity {
     private static final String FILENAME = "SizeBook.sav";
@@ -64,8 +67,10 @@ public class EditPerson extends AppCompatActivity {
         super.onStart();
         loadFile();
         person = people.get(position);
-
         name.setText(person.getName());
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        sdf.setLenient(false);
+        date.setText(sdf.format(person.getDate()));
         if (person.getNeck() != 0) {
             neck.setText(String.format("%.1f", person.getNeck()));
         }
@@ -109,6 +114,26 @@ public class EditPerson extends AppCompatActivity {
         } else {
             person.setName(name.getText().toString());
         }
+        // Taken from https://www.mkyong.com/java/how-to-check-if-date-is-valid-in-java/
+        // on 2017-02-05
+        // Alex Czeto showed me this URL
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        sdf.setLenient(false);
+
+        try {
+            if (date.getText().toString().isEmpty()) {
+                person.setDate(new Date());
+            } else {
+                //if not valid, it will throw ParseException
+                Date newDate = sdf.parse(date.getText().toString());
+                person.setDate(newDate);
+            }
+        } catch (ParseException e) {
+            errorFree = false;
+            Toast.makeText(this, "Please enter a valid format for date",
+                    Toast.LENGTH_SHORT).show();
+        }
+
         try{
             if (neck.getText().toString().isEmpty()) {
                 person.setNeck(Float.parseFloat("0"));
