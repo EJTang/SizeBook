@@ -66,12 +66,12 @@ public class AddPerson extends AppCompatActivity {
         inseam = (EditText) findViewById(R.id.inseamText);
         comments = (EditText) findViewById(R.id.commentsText);
 
-        if (name.getText().toString().isEmpty()){
+        if (name.getText().toString().trim().isEmpty()){
             Toast.makeText(this, "Please Enter a Name",
                     Toast.LENGTH_SHORT).show();
             return;
         } else {
-            person = new Person(name.getText().toString());
+            person = new Person(name.getText().toString().trim());
         }
 
         // Taken from https://www.mkyong.com/java/how-to-check-if-date-is-valid-in-java/
