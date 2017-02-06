@@ -5,58 +5,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="35494744906417"
-    token="-1239713984605336017"
-    verifier="COLD_SWAP_REQUESTED" >
+    timestamp="39615932905219"
+    token="119355950708507116"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="304" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="55" />
+        duration="0" />
     <task
         name="verifier"
-        duration="5" />
+        duration="0" />
 
     <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
+        location="/Users/ejtang/AndroidStudioProjects/ejtang-SizeBook/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="15340388025960"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="39615932905219"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/outputs/apk/app-debug.apk"
+            location="/Users/ejtang/AndroidStudioProjects/ejtang-SizeBook/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="35494744906417"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>
