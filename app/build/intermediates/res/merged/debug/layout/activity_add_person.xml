@@ -190,8 +190,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="finish"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        android:onClick="savePerson"
+        app:srcCompat="@drawable/ic_action_done_dark" />
 
 </RelativeLayout>
 

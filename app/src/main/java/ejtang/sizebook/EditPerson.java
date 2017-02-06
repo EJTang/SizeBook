@@ -80,6 +80,7 @@ public class EditPerson extends AppCompatActivity {
         person.setHip(Float.parseFloat(hip.getText().toString()));
         person.setInseam(Float.parseFloat(inseam.getText().toString()));
         person.setComment(comments.getText().toString());
+        
 
         saveInFile();
         finish();
