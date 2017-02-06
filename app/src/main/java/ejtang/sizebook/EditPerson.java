@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 import com.google.gson.Gson;
@@ -50,6 +51,8 @@ public class EditPerson extends AppCompatActivity {
         hip = (EditText) findViewById(R.id.hipText);
         inseam = (EditText) findViewById(R.id.inseamText);
         comments = (EditText) findViewById(R.id.commentsText);
+
+
     }
 
     @Override
@@ -66,6 +69,20 @@ public class EditPerson extends AppCompatActivity {
         hip.setText(person.getHip().toString());
         inseam.setText(person.getInseam().toString());
         comments.setText(person.getComment());
+    }
+
+    protected void finish(View view) {
+        person.setName(name.getText().toString());
+        person.setNeck(Float.parseFloat(neck.getText().toString()));
+        person.setBust(Float.parseFloat(bust.getText().toString()));
+        person.setChest(Float.parseFloat(chest.getText().toString()));
+        person.setWaist(Float.parseFloat(waist.getText().toString()));
+        person.setHip(Float.parseFloat(hip.getText().toString()));
+        person.setInseam(Float.parseFloat(inseam.getText().toString()));
+        person.setComment(comments.getText().toString());
+
+        saveInFile();
+        finish();
     }
 
     protected void loadFile() {

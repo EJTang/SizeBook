@@ -5,19 +5,19 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="17399483558695"
+    timestamp="20029228853893"
     token="-1239713984605336017"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="140" />
+        duration="168" />
     <task
         name="instant-run-dex"
-        duration="18" />
+        duration="26" />
     <task
         name="instant-run-transform"
-        duration="50" />
+        duration="36" />
     <task
         name="verifier"
         duration="2" />
@@ -34,14 +34,28 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="17168299454659"
+        timestamp="19643647644884"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="19929473727739"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="17399483558695"
+        timestamp="19985316486693"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/builds/debug/19985316486693/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="20029228853893"
         verifier="COMPATIBLE" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
