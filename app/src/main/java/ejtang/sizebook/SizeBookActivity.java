@@ -7,9 +7,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -39,6 +42,8 @@ public class SizeBookActivity extends AppCompatActivity {
         loadFile();
         adapter = new PeopleAdapter(people,this);
         peopleList.setAdapter(adapter);
+        TextView textView = (TextView) findViewById(R.id.numberOfEntries);
+        textView.setText("Number of Entries: " + Integer.toString(people.size()));
         peopleList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> peopleAdapterView, View personView,
                                     int position, long id) {
