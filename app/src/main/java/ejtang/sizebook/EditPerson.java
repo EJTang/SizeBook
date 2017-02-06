@@ -66,13 +66,28 @@ public class EditPerson extends AppCompatActivity {
         person = people.get(position);
 
         name.setText(person.getName());
-        neck.setText(String.format("%.1f", person.getNeck()));
-        bust.setText(String.format("%.1f",person.getBust()));
-        chest.setText(String.format("%.1f",person.getChest()));
-        waist.setText(String.format("%.1f",person.getWaist()));
-        hip.setText(String.format("%.1f",person.getHip()));
-        inseam.setText(String.format("%.1f",person.getInseam()));
-        comments.setText(person.getComment());
+        if (person.getNeck() != 0) {
+            neck.setText(String.format("%.1f", person.getNeck()));
+        }
+        if (person.getBust() != 0) {
+            bust.setText(String.format("%.1f",person.getBust()));
+        }
+        if (person.getChest() != 0) {
+            chest.setText(String.format("%.1f",person.getChest()));
+        }
+        if (person.getWaist() != 0) {
+            waist.setText(String.format("%.1f",person.getWaist()));
+        }
+        if (person.getHip() != 0) {
+            hip.setText(String.format("%.1f",person.getHip()));
+        }
+        if (person.getInseam() != 0) {
+            inseam.setText(String.format("%.1f",person.getInseam()));
+        }
+        if (!(person.getComment().toString().isEmpty())) {
+            comments.setText(person.getComment());
+        }
+
     }
 
     public void savePerson(View view) {
@@ -162,11 +177,8 @@ public class EditPerson extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
 
-        if (comments.getText().toString().isEmpty()) {
-            person.setComment("No Additional Comments");
-        } else {
-            person.setComment(comments.getText().toString());
-        }
+
+        person.setComment(comments.getText().toString());
 
         if (errorFree) {
             finish(view);

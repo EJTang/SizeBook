@@ -134,11 +134,8 @@ public class AddPerson extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
 
-        if (comments.getText().toString().isEmpty()) {
-            person.setComment("No Additional Comments");
-        } else {
-            person.setComment(comments.getText().toString());
-        }
+        person.setComment(comments.getText().toString());
+
 
         if (errorFree) {
             finish(view);

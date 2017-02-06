@@ -81,12 +81,36 @@ public class ExpandPerson extends AppCompatActivity {
         loadFile();
         person = people.get(position);
         nameField.setText(person.getName());
-        neckField.setText(String.format("%.1f", person.getNeck()));
-        bustField.setText(String.format("%.1f",person.getBust()));
-        chestField.setText(String.format("%.1f",person.getChest()));
-        waistField.setText(String.format("%.1f",person.getWaist()));
-        hipField.setText(String.format("%.1f",person.getHip()));
-        inseamField.setText(String.format("%.1f",person.getInseam()));
+        if (person.getNeck() == 0) {
+            neckField.setText("N/A");
+        } else {
+            neckField.setText(String.format("%.1f", person.getNeck()));
+        }
+        if (person.getBust() == 0) {
+            bustField.setText("N/A");
+        } else {
+            bustField.setText(String.format("%.1f",person.getBust()));
+        }
+        if (person.getChest() == 0) {
+            chestField.setText("N/A");
+        } else {
+            chestField.setText(String.format("%.1f",person.getChest()));
+        }
+        if (person.getWaist() == 0) {
+            waistField.setText("N/A");
+        } else {
+            waistField.setText(String.format("%.1f",person.getWaist()));
+        }
+        if (person.getHip() == 0) {
+            hipField.setText("N/A");
+        } else {
+            hipField.setText(String.format("%.1f",person.getHip()));
+        }
+        if (person.getInseam() == 0) {
+            inseamField.setText("N/A");
+        } else {
+            inseamField.setText(String.format("%.1f",person.getInseam()));
+        }
         commentsField.setText(person.getComment());
 
     }

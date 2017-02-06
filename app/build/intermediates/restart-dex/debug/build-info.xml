@@ -5,26 +5,26 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="26432634740458"
+    timestamp="29010366340597"
     token="-1239713984605336017"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="200" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="26" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="36" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
         timestamp="15340388025960"
@@ -44,25 +44,25 @@
             type="DEX" />
     </build>
     <build
-        timestamp="25291356276979"
-        verifier="FIELD_ADDED" >
-        <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="26370032723839"
+        timestamp="27930692338953"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="26432634740458"
+        timestamp="28690722450963"
         verifier="COMPATIBLE" >
         <artifact
-            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/reload-dex/debug/classes.dex"
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/builds/debug/28690722450963/classes.dex"
             type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="29010366340597"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/ejtang/AndroidStudioProjects/SizeBook/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
